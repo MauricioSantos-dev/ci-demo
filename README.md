@@ -1,21 +1,21 @@
 # ci-demo
 
-## 1. Descrição do projeto
+## Descrição do projeto
 Um pipeline simples de **Continuous Integration (CI)** utilizando **GitHub Actions**, configurado para executar automaticamente a cada `push` no repositório e exibir mensagens no log da execução.
 
-## 2. Objetivo da atividade
+## Objetivo da atividade
 O objetivo do pipeline criado é demonstrar o funcionamento básico de uma esteira de CI no GitHub Actions, validando que o workflow:
 - é disparado corretamente a cada `push`;
 - executa um job em um runner Linux (`ubuntu-latest`);
 - roda etapas (steps) que exibem mensagens no console (logs), simulando o início e o fim de um processo de integração.
 
-## 3. Estrutura do projeto
+## Estrutura do projeto
 Arquivos e pastas presentes no repositório:
 
 - `.github/workflows/ci.yml`
 - `README.md`
 
-## 4. Explicação do workflow (`.github/workflows/ci.yml`)
+## Explicação do workflow (`.github/workflows/ci.yml`)
 Abaixo está a explicação das partes do arquivo:
 
 - **`name: CI Test`**
@@ -46,7 +46,7 @@ Abaixo está a explicação das partes do arquivo:
   - **`- name: Mensagem 2`**: nome descritivo da etapa.
   - **`run: echo "Pipeline finalizado"`**: imprime a mensagem final nos logs.
 
-## 5. Fluxo do pipeline
+## Fluxo do pipeline
 Fluxo de execução do pipeline:
 
 Push no GitHub  
@@ -59,7 +59,7 @@ Execução das etapas (steps) com comandos `echo`
 ↓  
 Exibição das mensagens no log da execução  
 
-## 6. Resultado da execução
+## Resultado da execução
 Quando o pipeline é executado (após um `push`):
 - o GitHub Actions inicia uma execução do workflow **CI Test**;
 - o job `test` roda em um runner Linux;
@@ -67,5 +67,3 @@ Quando o pipeline é executado (após um `push`):
   - `Iniciando pipeline`
   - `Pipeline finalizado`
 
-## Entrega
-A entrega será realizada através do link do repositório no GitHub, contendo o **README.md atualizado**.
