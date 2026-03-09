@@ -36,4 +36,4 @@ Servir como base para evoluir o pipeline, por exemplo:
 - criar jobs separados (test/build/deploy)
 
 ---
-Autor: Mauricio Santos
+
