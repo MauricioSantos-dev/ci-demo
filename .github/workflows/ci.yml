@@ -1,0 +1,14 @@
+name: CI Test
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Mensagem 1
+        run: echo "Iniciando pipeline"
+
+      - name: Mensagem 2
+        run: echo "Pipeline finalizado"
